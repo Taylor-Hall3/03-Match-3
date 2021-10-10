@@ -1,8 +1,8 @@
 # 03-Match-3
 
-Exercise for MSCH-C220, 28 September 2021
+Project for MSCH-C220, 09 October 2021
 
-Adding music, sound, typeface changes, and several "juicy" features to a simple match-3 game.
+A simple match 3 game
 
 ## To play
 
