@@ -15,7 +15,7 @@ margin_left = 10.0
 margin_top = 10.0
 margin_right = 566.0
 margin_bottom = 482.0
-color = Color( 0, 0, 0, 0.501961 )
+color = Color( 0.619608, 0.509804, 1, 0.509804 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -43,5 +43,7 @@ margin_top = 562.0
 margin_right = 338.0
 margin_bottom = 602.0
 text = "Quit"
+
+[connection signal="focus_entered" from="Background" to="." method="_on_Background_focus_entered"]
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

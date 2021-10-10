@@ -1,5 +1,7 @@
 extends Node
 
+var camera = null
+
 var score = 0
 signal changed
 var scores = {
@@ -15,6 +17,9 @@ var scores = {
 	9:1000
 }
 
+func _ready():
+	randomize()	
+	
 func _unhandled_input(event):
 	if event.is_action_pressed("quit"):
 		get_tree().quit()
@@ -22,3 +27,7 @@ func _unhandled_input(event):
 func change_score(s):
 	score += s
 	emit_signal("changed")
+	if camera == null:
+		camera = get_node_or_null("/root/Game/Camera")
+	if camera != null:
+		camera.add_trauma(s/20.0)
